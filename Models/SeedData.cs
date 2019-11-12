@@ -23,38 +23,38 @@ namespace MvcMovie.Models
                 context.Movie.AddRange(
                     new Movie
                     {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
+                        Title = "The Singles Ward",
+                        ReleaseDate = DateTime.Parse("2002-9-1"),
                         Genre = "Romantic Comedy",
-                        Rating = "R",
-                        Price = 7.99M
+                        Rating = "PG",
+                        Price = 19.75M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
+                        Title = "The Best Two Years",
+                        ReleaseDate = DateTime.Parse("2004-9-7"),
                         Genre = "Comedy",
                         Rating = "PG",
-                        Price = 8.99M
+                        Price = 32.75M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
+                        Title = "The Errand of Angels",
+                        ReleaseDate = DateTime.Parse("2008-2-23"),
+                        Genre = "Drama",
                         Rating = "PG",
                         Price = 9.99M
                     },
 
                     new Movie
                     {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Rating = "NR",
-                        Price = 3.99M
+                        Title = "Midway To Heaven",
+                        ReleaseDate = DateTime.Parse("2011-4-15"),
+                        Genre = "Romantic Comedy",
+                        Rating = "PG",
+                        Price = 12.99M
                     }
                 );
                 context.SaveChanges();
