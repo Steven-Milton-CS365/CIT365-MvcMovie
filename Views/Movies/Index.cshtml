@@ -1,10 +1,10 @@
 ﻿@model MvcMovie.Models.MovieGenreViewModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "LDS Movie Index";
 }
 
-<h1>Index</h1>
+<h1>LDS Movie Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -17,13 +17,19 @@
         </select>
 
         Title: <input type="text" asp-for="SearchString" />
+
+        <select asp-for="DateSort">
+            <option selected disabled>-- Date Order --</option>
+            <option>Ascending</option>
+            <option>Descending</option>
+        </select>
         <input type="submit" value="Filter" />
     </p>
 </form>
 
 <table class="table">
     <thead>
-        <tr>
+        <tr style="background-color:aquamarine">
             <th>
                 @Html.DisplayNameFor(model => model.Movies[0].Title)
             </th>
@@ -45,7 +51,7 @@
     <tbody>
     @foreach (var item in Model.Movies)
         {
-            <tr>
+            <tr style="background-color:yellowgreen">
                 <td>
                     @Html.DisplayFor(modelItem => item.Title)
                 </td>

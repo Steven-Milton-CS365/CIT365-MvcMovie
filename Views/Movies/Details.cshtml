@@ -7,9 +7,9 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Movie</h4>
+    <h4>LDS Movies</h4>
     <hr />
-    <dl class="row">
+    <dl style="background-color: aqua" class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Title)
         </dt>
@@ -39,6 +39,12 @@
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd class="col-sm-10">
+            <img src="@Url.Content(Model.Image)" width="200" />
         </dd>
     </dl>
 </div>

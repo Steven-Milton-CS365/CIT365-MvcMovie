@@ -56,12 +56,24 @@ button.accept-policy {
 html {
   position: relative;
   min-height: 100%;
+    background-color: khaki;
 }
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #f4a460;
 }
+
+.table tr td{
+    background-color: aqua;
+    
+}
+
+.row {
+    background-color: aqua;
+}
+
 .footer {
   position: absolute;
   bottom: 0;

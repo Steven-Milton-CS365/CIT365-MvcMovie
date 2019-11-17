@@ -19,7 +19,7 @@ namespace MvcMovie.Models
         [Display(Name = "Release Date")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime ReleaseDate { get; set; }
-        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        
         [Required]
         [StringLength(30)] 
         public string Genre { get; set; }
@@ -32,5 +32,6 @@ namespace MvcMovie.Models
         [StringLength(5)]
         [Required] 
         public string Rating { get; set; }
+        public string Image { get; set; } 
     }
 }

@@ -27,7 +27,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2002-9-1"),
                         Genre = "Romantic Comedy",
                         Rating = "PG",
-                        Price = 19.75M
+                        Price = 19.75M,
+                        Image = "/images/SinglesWard.jpg"
                     },
 
                     new Movie
@@ -36,7 +37,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2004-9-7"),
                         Genre = "Comedy",
                         Rating = "PG",
-                        Price = 32.75M
+                        Price = 32.75M,
+                        Image = "/images/The_Best_Two_Years.jpg"
                     },
 
                     new Movie
@@ -45,7 +47,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2008-2-23"),
                         Genre = "Drama",
                         Rating = "PG",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        Image = "/images/ErrandOfAngels.jpg"
                     },
 
                     new Movie
@@ -54,7 +57,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("2011-4-15"),
                         Genre = "Romantic Comedy",
                         Rating = "PG",
-                        Price = 12.99M
+                        Price = 12.99M,
+                        Image = "/images/MidwayToHeaven.jpg"
                     }
                 );
                 context.SaveChanges();

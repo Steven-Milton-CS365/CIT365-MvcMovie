@@ -6,7 +6,7 @@
 
 <h1>Edit</h1>
 
-<h4>Movie</h4>
+<h4>LDS Movies</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -25,7 +25,19 @@
             </div>
             <div class="form-group">
                 <label asp-for="Genre" class="control-label"></label>
-                <input asp-for="Genre" class="form-control" />
+                <select id="genreDDedit" asp-for="Genre" class="form-control">
+                    <option>Action</option>
+                    <option>Adventure</option>
+                    <option>Comedy</option>
+                    <option>Drama</option>
+                    <option>Fantasy</option>
+                    <option>Horror</option>
+                    <option>Mystery</option>
+                    <option>Romance</option>
+                    <option>Romantic Comedy</option>
+                    <option>Science Fiction</option>
+                    <option>Western</option>
+                </select>
                 <span asp-validation-for="Genre" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -37,6 +49,11 @@
                 <label asp-for="Price" class="control-label"></label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
